@@ -33,7 +33,5 @@ class MvvmSampleActivity : AppCompatActivity() {
         }
         viewModel.catFact.observe(this, catFactObserver)
 
-        // Load data at start
-        viewModel.loadCatFact()
     }
 }
