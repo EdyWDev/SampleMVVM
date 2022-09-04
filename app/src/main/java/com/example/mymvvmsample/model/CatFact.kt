@@ -3,11 +3,8 @@ package com.example.mymvvmsample.model
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-data class CatFactDTO(
-    @SerializedName("fact")
-    @Expose
+data class CatFact(
     val fact: String,
-    @SerializedName("length")
-    @Expose
     val length: Int
 )
+

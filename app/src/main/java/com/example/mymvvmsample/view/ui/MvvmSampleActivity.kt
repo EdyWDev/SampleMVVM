@@ -5,7 +5,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.example.mymvvmsample.databinding.ActivityMvvmSampleBinding
-import com.example.mymvvmsample.model.CatFactDTO
+import com.example.mymvvmsample.model.CatFact
 import com.example.mymvvmsample.view.MvvmSampleViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -27,7 +27,7 @@ class MvvmSampleActivity : AppCompatActivity() {
         }
 
         // Setup view model cat fact observer
-        val catFactObserver = Observer<CatFactDTO> { newCatFact ->
+        val catFactObserver = Observer<CatFact> { newCatFact ->
             // New cat fact received from API
             binding.txtViewCatFact.text = newCatFact.fact
         }
